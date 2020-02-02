@@ -34,7 +34,7 @@ npm install
 
 ## Authors
 
-* **Galang Kerta** - *Initial work* - [galanggg](https://github.com/galanggg)
+* **Galang Kerta** - [galanggg](https://github.com/galanggg)
 
 ## License
 
