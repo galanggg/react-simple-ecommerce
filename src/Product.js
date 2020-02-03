@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Modals from './Modals'
 const Product = (props) => {
   return (
       <div className="col-sm-4">
@@ -8,7 +8,15 @@ const Product = (props) => {
             <div className="card-body">
               <h5 className="card-title">{props.product.name}</h5>
               <h6 className="card-title">$ {props.product.harga}</h6>
-              <button className="btn btn-primary" onClick={() => props.addItem(props.product)}>Buy now</button>
+              <div className="btn-group">
+                <button className="btn btn-primary" type="button" onClick={() => props.addItem(props.product)}>Buy now</button>
+                <Modals show={props.show} handleClose={props.handleClose}>
+                <div className="modal-body">
+                    <h1>{props.product.deskripsi}</h1>
+                </div>
+                </Modals>
+                <button className="btn btn-primary" type="button" onClick={() => props.showModal(props.product.deskripsi)}>Desc</button>
+              </div>
             </div>
           </div>
       </div>
