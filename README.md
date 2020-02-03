@@ -1,6 +1,8 @@
 # Project Title
 
 React Simple E-Commerce
+![Image 1](shopping-cart.png)
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development.
