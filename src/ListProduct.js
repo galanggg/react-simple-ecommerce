@@ -3,6 +3,7 @@ import {Query} from 'react-apollo'
 import PRODUCTS_QUERY from './components/index'
 import Navbar from './Navbar'
 import Product from './Product'
+import Cart from './Cart'
 
 class ListProduct extends React.Component {
   state = {
@@ -13,18 +14,20 @@ class ListProduct extends React.Component {
 
   addItem = item => {
     this.setState({
-      cartItems: this.state.cartItems.concat(item)
+      cartItems: this.state.cartItems.concat([item])
     })
   }
 
-  showModal = (data) => {
+  showModal = () => {
     this.setState({
-      show: true,
+      show: true
     })
   }
 
   hideModal = () => {
-    this.setState({ show: false });
+    this.setState({
+      show: false
+    });
   };
 
   render() {
@@ -35,12 +38,14 @@ class ListProduct extends React.Component {
           if(error) return <div>Error Fetching Api <span role="img" aria-label="desc emoticon">😞</span></div>
 
           const items = data.itemsList.items
+          const itemssent = this.state.cartItems
           return (
             <div>
-            <Navbar />
+            <Navbar cart={itemssent} show={this.showModal} />
+            <Cart show={this.state.show} items={itemssent} handleClose={this.hideModal}></Cart>
             <div className="container mt-4">
               <div className="row">
-                 {items.map(item => <Product key={item.id} product={item} addItem={this.addItem} showModal={this.showModal} show={this.state.show} handleClose={this.hideModal} />)}
+                 {items.map(item => <Product key={item.id} product={item} addItem={this.addItem}  />)}
               </div>
             </div>
           </div>
