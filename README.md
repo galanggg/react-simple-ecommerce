@@ -1,6 +1,8 @@
 # Project Title
 
 React Simple E-Commerce
+![Image 1](shopping-cart.png)
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development.
@@ -30,6 +32,8 @@ npm install
 
 * [Bootstrap](https://getbootstrap.com/) - The Css framework used
 * [CRA](https://create-react-app.dev/) - Used to generate React App
+* [Apollo GraphQL](https://www.apollographql.com/) - connect to backend GraphQL 
+
 
 
 ## Authors
