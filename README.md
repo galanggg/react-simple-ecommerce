@@ -1,6 +1,6 @@
 # Project Title
 
-React Simple E-Commerce
+React Simple E-Commerce (Not Ready Yet..)
 ![Image 1](shopping-cart.png)
 
 ## Getting Started
