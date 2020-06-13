@@ -1,7 +1,12 @@
 # Project Title
 
+<<<<<<< HEAD
 React Simple E-Commerce
 ![Image 1](screenshot.png)
+=======
+React Simple E-Commerce (Not Ready Yet..)
+![Image 1](shopping-cart.png)
+>>>>>>> e370f5aaccb4eda2d3544abd4f8f51e8c949f41b
 
 ## Getting Started
 
