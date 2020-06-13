@@ -1,7 +1,7 @@
 # Project Title
 
 React Simple E-Commerce
-![Image 1](shopping-cart.png)
+![Image 1](screenshot.png)
 
 ## Getting Started
 
@@ -32,7 +32,7 @@ npm install
 
 * [Bootstrap](https://getbootstrap.com/) - The Css framework used
 * [CRA](https://create-react-app.dev/) - Used to generate React App
-* [Apollo GraphQL](https://www.apollographql.com/) - connect to backend GraphQL 
+* [Apollo GraphQL](https://www.apollographql.com/) - connect to backend GraphQL
 
 
 
